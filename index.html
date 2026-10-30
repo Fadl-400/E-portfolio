@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - 1st Year Engineering Student</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display for a warm editorial touch -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        warm: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            800: '#292524',
+                            900: '#1c1917',
+                        },
+                        accent: {
+                            50: '#fffbebe',
+                            100: '#fef3c7',
+                            600: '#d97706',
+                            700: '#b45309',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#FAF8F5] text-warm-800 antialiased font-sans selection:bg-amber-100 selection:text-amber-800">
+
+    <!-- Header / Navbar with 6 Navigation Tabs + Resume Link -->
+    <header class="sticky top-0 z-40 bg-[#FAF8F5]/80 backdrop-blur-md border-b border-stone-200/80">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#welcome" class="font-serif italic text-xl font-medium text-stone-900 tracking-tight">
+                BOUGHANO Fadl Allah<span class="px-10 text-amber-600 font-sans not-italic"></span>
+            </a>
+            <nav class="hidden lg:flex items-center space-x-6 text-xs font-medium text-stone-600">
+                <a href="#welcome" class="hover:text-amber-700 transition-colors">Welcome</a>
+                <a href="#engineering" class="hover:text-amber-700 transition-colors">Engineering Course</a>
+                <a href="#mobility" class="hover:text-amber-700 transition-colors">International Mobility</a>
+                <a href="#sustainability" class="hover:text-amber-700 transition-colors">Sustainability & Civic</a>
+                <a href="#activities" class="hover:text-amber-700 transition-colors">Sport & Activities</a>
+                <a href="#career" class="hover:text-amber-700 transition-colors">Career Development</a>
+                <a href="img/CV english.pdf" download class="inline-flex items-center gap-1.5 text-amber-700 font-semibold hover:text-amber-800 transition-colors pl-3 border-l border-stone-300">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- TAB 1: Welcome Section -->
+    <section id="welcome" class="py-16 md:py-24 px-6 max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-10 md:gap-14">
+            <!-- Profile Picture with a softer, organic frame -->
+            <div class="shrink-0 relative">
+                <div class="w-40 h-40 md:w-48 md:h-48 rounded-3xl bg-stone-200 border-4 border-white shadow-xl shadow-stone-200/50 overflow-hidden flex items-center justify-center text-stone-400 rotate-1 transition-transform hover:rotate-0 duration-300">
+                    <img src="img/photo2.png" alt="Profile Picture" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hidden flex-col items-center justify-center p-4 text-center">
+                        <i data-lucide="user" class="w-10 h-10 mb-1 text-stone-400"></i>
+                        <span class="text-xs text-stone-500 font-medium">Add profil.jpg</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Warm Intro Content -->
+            <div class="space-y-5 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200/60 text-amber-800 text-xs font-medium">
+                    <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                    1st Year Engineering Student • Post-CPGE
+                </div>
+                <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-stone-900 leading-tight">
+                    Hello, I'm <span class="font-serif italic font-normal text-amber-700">BOUGHANO Fadl Allah</span>.
+                </h1>
+                <p class="text-base md:text-lg text-stone-600 leading-relaxed max-w-2xl">
+                    I am a first-year engineering student at ENSEEIHT departement Computer Science andTelecommunication with two years of intensive scientific preparatory classes (MPSI/MP). With Strong foundations in mathematics, algorithms and programming. Curious, rigorous and motivated, I am eager to strengthen my computer science skills and contribute to practical technical projects. 
+                </p>
+                <div class="pt-2 flex flex-wrap justify-center md:justify-start items-center gap-3">
+                    <a href="img/cv english.pdf" download class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-stone-900 text-stone-100 font-medium text-sm hover:bg-stone-800 transition-colors shadow-sm">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download CV (English)
+                    </a>
+                    <a href="img/cv french.pdf" download class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-stone-900 text-stone-100 font-medium text-sm hover:bg-stone-800 transition-colors shadow-sm">
+                        <i data-lucide="download" class="w-4 h-4"></i> Download CV (French)
+                    </a>                    
+                    <a href="#contact" class="px-5 py-2.5 rounded-xl bg-white border border-stone-200 text-stone-700 font-medium text-sm hover:bg-stone-50 transition-colors shadow-sm">
+                        Get in Touch
+                    </a>
+                    <a href="https://youtu.be/6Ck-f5tqvIE" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-amber-200 bg-amber-50/60 text-amber-800 font-medium text-sm hover:bg-amber-100/60 transition-colors shadow-sm">
+                        <i data-lucide="play" class="w-4 h-4 text-amber-600"></i> Watch Intro 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TAB 2: Engineering Course Section -->
+    <section id="engineering" class="py-16 px-6 max-w-5xl mx-auto border-t border-stone-200/80">
+        <div class="flex items-center gap-3 mb-8">
+            <div class="p-2.5 rounded-xl bg-amber-100/60 text-amber-800">
+                <i data-lucide="cpu" class="w-5 h-5"></i>
+            </div>
+            <h2 class="text-2xl font-bold tracking-tight text-stone-900">Engineering Course</h2>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Academic Path Cards -->
+            <div class="bg-white p-6 md:p-8 rounded-2xl border border-stone-200/80 shadow-sm space-y-6">
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-amber-50 text-amber-700 rounded-xl mt-1 shrink-0">
+                        <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-stone-900 text-base">Engineering School (1st Year / ENSEEIHT)</h3>
+                        <p class="text-xs text-amber-800 font-medium mb-2">2026 – Present</p>
+                        <p class="text-sm text-stone-600 leading-relaxed">
+                            Focusing on Computer Science foundations: Programming, Data Structures, Systems & Networks and Software Architecture.
+                        </p>
+                    </div>
+                </div>
+                <hr class="border-stone-100">
+                <div class="flex items-start gap-4">
+                    <div class="p-3 bg-stone-100 text-stone-600 rounded-xl mt-1 shrink-0">
+                        <i data-lucide="book-open" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-stone-900 text-base">Preparatory Classes for Grandes Écoles (CPGE ALQALAM)</h3>
+                        <p class="text-xs text-stone-500 font-medium mb-2">2-year Intensive Scientific Program (2024-2026)</p>
+                        <p class="text-sm text-stone-600 leading-relaxed">
+                            Rigorous training in Mathematics, Physics, and IT (Python, numpy and SQL). Built a strong problem-solving mindset, technical discipline, and high adaptability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Featured Project -->
+            <div class="bg-white p-6 md:p-8 rounded-2xl border border-stone-200/80 shadow-sm space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <h3 class="text-lg font-bold text-stone-900">Mini-Project: Jeu de devin using Ada</h3>
+                    <span class="px-3 py-1 bg-amber-50 text-amber-800 text-xs font-semibold rounded-full border border-amber-200/50">Academic Project</span>
+                </div>
+                <p class="text-stone-600 text-sm leading-relaxed">
+                    
+                </p>
+                <div class="flex flex-wrap gap-2 pt-1">
+                    <span class="px-3 py-1 bg-stone-100 text-stone-700 text-xs font-medium rounded-lg">Ada</span>
+                    <span class="px-3 py-1 bg-stone-100 text-stone-700 text-xs font-medium rounded-lg">Git</span>
+                    <span class="px-3 py-1 bg-stone-100 text-stone-700 text-xs font-medium rounded-lg">Gitlab</span>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TAB 3: International Mobility Section -->
+    <section id="mobility" class="py-16 px-6 max-w-5xl mx-auto border-t border-stone-200/80">
+        <div class="flex items-center gap-3 mb-8">
+            <div class="p-2.5 rounded-xl bg-amber-100/60 text-amber-800">
+                <i data-lucide="globe" class="w-5 h-5"></i>
+            </div>
+            <h2 class="text-2xl font-bold tracking-tight text-stone-900">International Mobility</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-3">
+                <h3 class="font-bold text-stone-900 flex items-center gap-2">
+                    <i data-lucide="languages" class="w-4 h-4 text-amber-700"></i> Languages
+                </h3>
+                <ul class="text-sm text-stone-600 space-y-2">
+                    <li class="flex items-center justify-between">
+                        <span><strong>French: </strong> Full professional proficiency</span>
+                        
+                    </li>
+                    <li class="flex items-center justify-between border-t border-stone-100 pt-2">
+                        <span><strong>English:</strong> Full professional proficiency</span>
+                    </li>
+                    <li class="flex items-center justify-between border-t border-stone-100 pt-2">
+                        <span><strong>Arabic:</strong> Native</span>
+                    </li>
+                    <li class="flex items-center justify-between border-t border-stone-100 pt-2">
+                        <span><strong>Spanish:</strong> Basic knowledge</span>
+                    </li>                    
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-3">
+                <h3 class="font-bold text-stone-900 flex items-center gap-2">
+                    <i data-lucide="compass" class="w-4 h-4 text-amber-700"></i> Mobility Projects
+                </h3>
+                <p class="text-sm text-stone-600 leading-relaxed">
+                    I am particularily interested in universities in Canada such as Sherbrooke university and many other universities in the United States so as to develop my programming skills and knowmedge and gain new expriences. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TAB 4: Sustainability & Civic Engagement Section -->
+    <section id="sustainability" class="py-16 px-6 max-w-5xl mx-auto border-t border-stone-200/80">
+        <div class="flex items-center gap-3 mb-8">
+            <div class="p-2.5 rounded-xl bg-amber-100/60 text-amber-800">
+                <i data-lucide="leaf" class="w-5 h-5"></i>
+            </div>
+            <h2 class="text-2xl font-bold tracking-tight text-stone-900">Sustainability & Civic Engagement</h2>
+        </div>
+
+    </section>
+
+    <!-- TAB 5: Sport & Other Activities Section -->
+    <section id="activities" class="py-16 px-6 max-w-5xl mx-auto border-t border-stone-200/80">
+        <div class="flex items-center gap-3 mb-8">
+            <div class="p-2.5 rounded-xl bg-amber-100/60 text-amber-800">
+                <i data-lucide="activity" class="w-5 h-5"></i>
+            </div>
+            <h2 class="text-2xl font-bold tracking-tight text-stone-900">Sport & Other Activities</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm space-y-3">
+                <div class="flex items-center gap-3">
+                    <div class="p-2.5 bg-amber-50 text-amber-700 rounded-xl"><i data-lucide="trophy" class="w-5 h-5"></i></div>
+                    <h3 class="font-bold text-stone-900">Team Sports & Fitness</h3>
+                </div>
+                <p class="text-sm text-stone-600 leading-relaxed">
+                    Regular engagement in team sports especialy football and running wich help in building resilience, clear communication , and team spirit outside of the classroom.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TAB 6: Career Development & Direct Contact Section -->
+    <section id="career" class="py-16 px-6 max-w-5xl mx-auto border-t border-stone-200/80">
+        <div class="flex items-center gap-3 mb-8">
+            <div class="p-2.5 rounded-xl bg-amber-100/60 text-amber-800">
+                <i data-lucide="briefcase" class="w-5 h-5"></i>
+            </div>
+            <h2 class="text-2xl font-bold tracking-tight text-stone-900">Career Development</h2>
+        </div>
+
+        <div class="bg-white p-6 md:p-8 rounded-2xl border border-stone-200/80 shadow-sm space-y-8">
+            <div>
+                <h3 class="font-bold text-stone-900 text-lg mb-2"></h3>
+                <p class="text-sm text-stone-600 leading-relaxed max-w-3xl">
+                    
+                </p>
+            </div>
+
+            <hr class="border-stone-100">
+
+            <!-- Direct Contact (Email & LinkedIn only) -->
+            <div id="contact" class="space-y-4">
+                <h3 class="font-bold text-stone-900 text-base">Let's Connect Directly</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="mailto:your.email@engineering-school.com" class="flex items-center gap-4 p-4 rounded-xl border border-stone-200/80 hover:border-amber-300 hover:bg-amber-50/40 transition-all group">
+                        <div class="p-3 bg-amber-50 text-amber-700 rounded-xl group-hover:bg-amber-600 group-hover:text-white transition-colors shrink-0">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <p class="text-xs text-stone-500 font-medium">Email</p>
+                            <p class="text-sm font-semibold text-stone-900 truncate">fadlallahboughano@gmail.com</p>
+                        </div>
+                    </a>
+                    <!-- Paste your exact LinkedIn URL below -->
+                    <a href="https://www.linkedin.com/in/fadl-allah-boughano-73a504424" target="_blank" class="flex items-center gap-4 p-4 rounded-xl border border-stone-200/80 hover:border-amber-300 hover:bg-amber-50/40 transition-all group">
+                        <div class="p-3 bg-amber-50 text-amber-700 rounded-xl group-hover:bg-amber-600 group-hover:text-white transition-colors shrink-0">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-stone-500 font-medium">LinkedIn</p>
+                            <p class="text-sm font-semibold text-stone-900">View Profile</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-stone-200/80 text-center text-sm text-stone-500">
+        <p>© 2026 • ENSEEIHT / BOUGHANO Fadl Allah</p>
+    </footer>
+
+    <!-- Video Modal (Local File Player) -->
+    <div id="videoModal" class="fixed inset-0 z-50 hidden bg-stone-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl overflow-hidden max-w-2xl w-full shadow-2xl relative border border-stone-200">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-stone-100 bg-stone-50">
+                <h3 class="font-bold text-sm text-stone-900">Video Introduction</h3>
+                <button onclick="closeVideoModal()" class="text-stone-400 hover:text-stone-700 p-1">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div class="relative aspect-video bg-black">
+                <!-- Lecteur YouTube Iframe -->
+                <iframe id="youtubeIframe" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+
+        function openVideoModal(videoId) {
+            const modal = document.getElementById('videoModal');
+            const iframe = document.getElementById('youtubeIframe');
+            
+            // Charge la vidéo YouTube avec lecture automatique
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            modal.classList.remove('hidden');
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const iframe = document.getElementById('youtubeIframe');
+            
+            // Coupe la vidéo en vidant la source
+            iframe.src = '';
+            modal.classList.add('hidden');
+        }
+
+        document.getElementById('videoModal').addEventListener('click', (e) => {
+            if (e.target.id === 'videoModal') closeVideoModal();
+        });
+    </script>
+</body>
+</html>
